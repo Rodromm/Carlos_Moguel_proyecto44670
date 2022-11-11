@@ -111,7 +111,9 @@ header {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     )
-    ,url(../img/img/camaro\ imagen\ mediana.jpg);
+    ,url(../img/camaro\ imagen\ mediana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
     h1{
         color: white;
@@ -167,7 +169,7 @@ header {
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
         )
-        ,url(../img/img/camaro\ imagen\ mediana.jpg);
+        ,url(../img/camaro\ imagen\ mediana.jpg);
         
     }
 
@@ -177,7 +179,7 @@ header {
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
         )
-        ,url(../img/img/camaro\ imagen\ mediana.jpg);
+        ,url(../img/camaro\ imagen\ mediana.jpg);
     }
 
     .carta:nth-child(3){
@@ -186,7 +188,7 @@ header {
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
         )
-        ,url(../img/img/camaro\ imagen\ mediana.jpg);
+        ,url(../img/camaro\ imagen\ mediana.jpg);
     }
 
 }
@@ -343,7 +345,7 @@ footer{
       rgba(0, 0, 0, 0.5), 
       rgba(0, 0, 0, 0.5) 
    )
-   ,url(../img/img/hablanos.jpg);
+   ,url(../img/hablanos.jpg);
    background-size: cover;
    background-position: center center;
    height: 459px;
@@ -389,7 +391,7 @@ footer{
       rgba(0, 0, 0, 0.5), 
       rgba(0, 0, 0, 0.5) 
    )
-   ,url(../img/img/hablanos.jpg);
+   ,url(../img/hablanos.jpg);
    background-size: cover;
    background-position: center center;
    height: 459px;

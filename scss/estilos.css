@@ -233,7 +233,9 @@ header .logo {
   flex-direction: column;
   height: 90vh;
   color: white;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/camaro\ imagen\ mediana.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/camaro\ imagen\ mediana.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #hero h1 {
   color: white;
@@ -275,13 +277,13 @@ header .logo {
   border-radius: 16px;
 }
 #nuestros-programas .carta:first-child {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/camaro\ imagen\ mediana.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/camaro\ imagen\ mediana.jpg);
 }
 #nuestros-programas .carta:nth-child(2) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/camaro\ imagen\ mediana.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/camaro\ imagen\ mediana.jpg);
 }
 #nuestros-programas .carta:nth-child(3) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/camaro\ imagen\ mediana.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/camaro\ imagen\ mediana.jpg);
 }
 
 /*finaliza seccion de nuestro programas*/
@@ -392,7 +394,7 @@ footer .container {
     margin-top: 0px;
   }
   #somos-proya .img-container {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/hablanos.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hablanos.jpg);
     background-size: cover;
     background-position: center center;
     height: 459px;
@@ -421,7 +423,7 @@ footer .container {
   /*finaliza progrmas*/
   /*comienza caracteristicas*/
   #caracteristicas {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/hablanos.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hablanos.jpg);
     background-size: cover;
     background-position: center center;
     height: 459px;

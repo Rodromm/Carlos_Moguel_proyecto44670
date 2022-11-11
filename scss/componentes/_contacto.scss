@@ -1,0 +1,99 @@
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.75em;
+    background-color: black;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    
+    .logo__content{
+        text-align: center;
+        font-size: 3em;
+    }
+
+}
+
+.logo__content{
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo__content span{
+    color: orangered;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contact-wrapper > * {
+    padding: 2.3em;
+}
+
+.contact-form{
+    background: rgb(22, 22, 22);
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block{
+    grid-column: 1/3;
+}
+
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid orangered;
+}
+
+.contact-form form button{
+    background: orangered;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: rgb(253, 79, 16);
+    color: black;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info{
+    background: black;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+   text-align: center;
+   margin: 0 0 1rem 0; 
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li{
+    padding: .3em;
+}

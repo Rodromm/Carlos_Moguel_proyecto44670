@@ -1,0 +1,37 @@
+@import "../variables/variables";
+
+#ubicacion__p{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+    h1{
+        text-align: center;
+        color: $color_botones;
+    }
+
+    .parrafo_ubicacion{
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+   
+}
+.map_responsivo{
+    display: flex;
+    flex-direction: row;
+    align-items: center center;
+    justify-content: center;
+
+    iframe{
+        width: 200%;
+        height: 200%;
+        align-content: center center;
+        justify-content: center;
+    }
+}
+

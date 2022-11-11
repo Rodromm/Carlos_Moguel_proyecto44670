@@ -1,0 +1,414 @@
+@import "./variables/variables";
+@import "./componentes/galeria";
+@import "./componentes/contacto";
+@import "./componentes/ubicacion";
+
+
+/*estilos generales*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 2.7em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    font-size: 1.25em;
+  }
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: $color_botones;
+  
+  
+
+  button:hover {
+    background-color: $color_botones;
+  }
+}
+/* finaliza estilos generales*/
+
+/*navegador*/
+header {
+  background-color: rgb(211, 207, 207);
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+
+  a:hover{
+    color: orangered;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: orangered;
+    font-size: 1.6em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+}
+
+/*finaliza navegador*/
+
+/*seccion hero*/
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../img/img/camaro\ imagen\ mediana.jpg);
+    
+    h1{
+        color: white;
+    }
+
+    button{
+        font-size: 1.75em;
+    }
+
+}
+/*finaliza seccion hero*/
+/*seccion somor proya*/
+#somos-proya{
+    .container{
+        text-align: center;
+        padding: 200px 12px;
+    }
+
+    
+}
+/*seccion somor proya*/
+/*seccion nuestros programas*/
+#nuestros-programas{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    h2{
+        margin-top: 0;
+        font-size: 3.2em;
+    }
+
+    .container{
+        padding: 150px 12px;
+    }
+
+    p{
+        display: none;
+    }
+
+    .carta{
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 50px;
+        margin: 20px;
+        border-radius: 16px;
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        )
+        ,url(../img/img/camaro\ imagen\ mediana.jpg);
+        
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        )
+        ,url(../img/img/camaro\ imagen\ mediana.jpg);
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        )
+        ,url(../img/img/camaro\ imagen\ mediana.jpg);
+    }
+
+}
+/*finaliza seccion de nuestro programas*/
+
+/*comienza caracteristicas*/
+
+#caracteristicas{
+
+  .container{
+    text-align: center;
+    padding: 200px 12px;
+  }
+
+  li{
+    margin: 15px 0px;
+    font-weight: bold;
+  }
+}
+/*finaliza caracteristicas*/
+/*comienza final*/
+
+#final{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  height: 80vh;
+
+
+  h2{
+    font-size: 9vw;
+  }
+
+  button{
+    font-size: 5vw;
+  }
+
+}
+/*finaliza fin*/
+/*comienza footer*/
+
+footer{
+  background-color: orangered;
+  
+
+  p{
+    margin: 0;
+  padding: 12px;
+  color: black;
+
+  }
+
+  .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+
+
+}
+@media (min-width: 620px){
+  header{
+    /*position: fixed;*/
+    width: 100%;
+    background-color: black;
+
+    a{
+      color: white;
+    }
+
+    .container{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    nav{
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px;
+      
+      
+    }
+  }
+
+  /*contacto info*/
+
+  .contact-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    *{
+      padding: 1.8em;
+    }
+  }
+
+  .contact-info{
+
+    h4, ul, p{
+      padding: -3em;
+      text-align: left;
+    }
+
+    i{
+      color: orangered;
+    }
+  }
+/*termina contacto info*/
+
+/*Galeria*/
+.column{
+  flex: 30%;
+}
+/*fin galeria*/
+
+/*comienza hero*/
+#hero{
+  h1{
+    font-size: 5em;
+  }
+}
+/*finaliza hero*/
+/*comienza proya*/
+#somos-proya{
+
+  .texto{
+    width: 94%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .color-acento{
+    color: $color_botones;
+
+  }
+
+  h2{
+    margin-top: 0px;
+  }
+
+  .img-container{
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5) 
+   )
+   ,url(../img/img/hablanos.jpg);
+   background-size: cover;
+   background-position: center center;
+   height: 459px;
+   width: auto;
+  }
+}
+/*finaliza proya*/
+
+/*comienza nuestro programas*/
+
+#nuestros-programas{
+
+  .programas{
+    display: flex;
+    justify-content: center;
+  }
+
+  p{
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  h2{
+    font-size: 4em;
+  }
+
+  h3{
+    margin-top: 0;
+  }
+
+  .carta{
+    padding: 50px;
+    box-shadow: 2px 2px 10px orangered;
+  }
+
+  
+}
+/*finaliza progrmas*/
+/*comienza caracteristicas*/
+#caracteristicas{
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5) 
+   )
+   ,url(../img/img/hablanos.jpg);
+   background-size: cover;
+   background-position: center center;
+   height: 459px;
+   width: auto;
+  }
+  .container{
+    text-align: center;
+    justify-content: center;
+  }
+
+  ul{
+    margin-left: 100px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+  }
+
+  
+}
+/*finaliza caracteristicas*/
+
+

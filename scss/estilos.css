@@ -1,0 +1,441 @@
+h1 {
+  text-align: center;
+  color: #de9000;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+.column img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.row {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.75em;
+  background-color: black;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+.content .logo__content {
+  text-align: center;
+  font-size: 3em;
+}
+
+.logo__content {
+  text-align: center;
+  font-size: 3em;
+}
+
+.logo__content span {
+  color: orangered;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contact-wrapper > * {
+  padding: 2.3em;
+}
+
+.contact-form {
+  background: rgb(22, 22, 22);
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+  grid-column: 1/3;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: white;
+  border-bottom: 1px solid orangered;
+}
+
+.contact-form form button {
+  background: orangered;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: rgb(253, 79, 16);
+  color: black;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+.contact-info {
+  background: black;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  padding: 0.3em;
+}
+
+#ubicacion__p {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#ubicacion__p h1 {
+  text-align: center;
+  color: #de9000;
+}
+#ubicacion__p .parrafo_ubicacion {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.map_responsivo {
+  display: flex;
+  flex-direction: row;
+  align-items: center center;
+  justify-content: center;
+}
+.map_responsivo iframe {
+  width: 200%;
+  height: 200%;
+  align-content: center center;
+  justify-content: center;
+}
+
+/*estilos generales*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+body h1 {
+  font-size: 3.5em;
+}
+body h2 {
+  font-size: 2.7em;
+}
+body h3 {
+  font-size: 2em;
+}
+body p {
+  font-size: 1.25em;
+}
+body ul {
+  list-style: none;
+}
+body li {
+  font-size: 1.25em;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #de9000;
+}
+button button:hover {
+  background-color: #de9000;
+}
+
+/* finaliza estilos generales*/
+/*navegador*/
+header {
+  background-color: rgb(211, 207, 207);
+}
+header .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+header a:hover {
+  color: orangered;
+}
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: orangered;
+  font-size: 1.6em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*finaliza navegador*/
+/*seccion hero*/
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/camaro\ imagen\ mediana.jpg);
+}
+#hero h1 {
+  color: white;
+}
+#hero button {
+  font-size: 1.75em;
+}
+
+/*finaliza seccion hero*/
+/*seccion somor proya*/
+#somos-proya .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+/*seccion somor proya*/
+/*seccion nuestros programas*/
+#nuestros-programas {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+#nuestros-programas h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+#nuestros-programas .container {
+  padding: 150px 12px;
+}
+#nuestros-programas p {
+  display: none;
+}
+#nuestros-programas .carta {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 16px;
+}
+#nuestros-programas .carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/camaro\ imagen\ mediana.jpg);
+}
+#nuestros-programas .carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/camaro\ imagen\ mediana.jpg);
+}
+#nuestros-programas .carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/camaro\ imagen\ mediana.jpg);
+}
+
+/*finaliza seccion de nuestro programas*/
+/*comienza caracteristicas*/
+#caracteristicas .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+#caracteristicas li {
+  margin: 15px 0px;
+  font-weight: bold;
+}
+
+/*finaliza caracteristicas*/
+/*comienza final*/
+#final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  height: 80vh;
+}
+#final h2 {
+  font-size: 9vw;
+}
+#final button {
+  font-size: 5vw;
+}
+
+/*finaliza fin*/
+/*comienza footer*/
+footer {
+  background-color: orangered;
+}
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: black;
+}
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 620px) {
+  header {
+    /*position: fixed;*/
+    width: 100%;
+    background-color: black;
+  }
+  header a {
+    color: white;
+  }
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+  /*contacto info*/
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper * {
+    padding: 1.8em;
+  }
+  .contact-info h4, .contact-info ul, .contact-info p {
+    padding: -3em;
+    text-align: left;
+  }
+  .contact-info i {
+    color: orangered;
+  }
+  /*termina contacto info*/
+  /*Galeria*/
+  .column {
+    flex: 30%;
+  }
+  /*fin galeria*/
+  /*comienza hero*/
+  #hero h1 {
+    font-size: 5em;
+  }
+  /*finaliza hero*/
+  /*comienza proya*/
+  #somos-proya .texto {
+    width: 94%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #somos-proya .color-acento {
+    color: #de9000;
+  }
+  #somos-proya h2 {
+    margin-top: 0px;
+  }
+  #somos-proya .img-container {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/hablanos.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 459px;
+    width: auto;
+  }
+  /*finaliza proya*/
+  /*comienza nuestro programas*/
+  #nuestros-programas .programas {
+    display: flex;
+    justify-content: center;
+  }
+  #nuestros-programas p {
+    display: block;
+    margin-bottom: 20px;
+  }
+  #nuestros-programas h2 {
+    font-size: 4em;
+  }
+  #nuestros-programas h3 {
+    margin-top: 0;
+  }
+  #nuestros-programas .carta {
+    padding: 50px;
+    box-shadow: 2px 2px 10px orangered;
+  }
+  /*finaliza progrmas*/
+  /*comienza caracteristicas*/
+  #caracteristicas {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/hablanos.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 459px;
+    width: auto;
+  }
+  .container {
+    text-align: center;
+    justify-content: center;
+  }
+  ul {
+    margin-left: 100px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+  }
+}
+/*finaliza caracteristicas*//*# sourceMappingURL=estilos.css.map */

@@ -1,22 +1,73 @@
-h1 {
-  text-align: center;
-  color: #de9000;
-}
-
-.column {
-  flex: 25%;
-  padding: 5px;
-}
-
-.column img {
+#titulo {
   width: 100%;
-  margin-top: 5px;
+  background-color: white;
+  text-align: center;
 }
 
-.row {
-  display: flex;
-  padding: 5px;
-  flex-wrap: wrap;
+#grilla {
+  display: grid;
+  height: 900px;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 25% 25% 25%;
+  background-color: #de9000;
+  grid-template-areas: "a1 a2 a3" "a5 a6 a7" "a8 a9 a4";
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+}
+#grilla #hijo_uno {
+  color: white;
+  text-align: center;
+  background-color: black;
+  grid-area: a1;
+  width: 80%;
+  height: 80%;
+  border: 1px solid black;
+}
+#grilla #hijo_dos {
+  text-align: center;
+  background-color: blueviolet;
+  grid-area: a2;
+  width: 80%;
+  height: 80%;
+  border: 1px solid black;
+}
+#grilla .hijo_tres {
+  text-align: center;
+  background-color: blueviolet;
+  grid-area: a3;
+  width: 80%;
+  height: 80%;
+  border: 1px solid black;
+}
+#grilla .hijo_cuatro {
+  text-align: center;
+  background-color: blueviolet;
+  grid-area: a7;
+  width: 80%;
+  height: 80%;
+  border: 1px solid black;
+}
+#grilla .hijo_cinco {
+  text-align: center;
+  background-color: blueviolet;
+  grid-area: a5;
+  width: 80%;
+  height: 80%;
+  border: 1px solid black;
+}
+#grilla .hijo_seis {
+  text-align: center;
+  background-color: blueviolet;
+  grid-area: a6;
+  width: 80%;
+  height: 80%;
+  border: 1px solid black;
+}
+#grilla img {
+  width: 100%;
+  height: 100%;
 }
 
 .content {
@@ -143,6 +194,22 @@ h1 {
   height: 200%;
   align-content: center center;
   justify-content: center;
+}
+
+#informacion {
+  display: flex;
+  flex-direction: column;
+}
+#informacion h2 {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#informacion .texto__mision {
+  text-align: justify;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 26px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /*estilos generales*/

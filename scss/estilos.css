@@ -1,75 +1,123 @@
-#titulo {
-  width: 100%;
-  background-color: white;
-  text-align: center;
+/*
+#titulo{
+    width: 100%;
+    background-color: white;
+    text-align: center;
 }
 
-#grilla {
-  display: grid;
-  height: 900px;
-  grid-template-rows: 200px 200px 200px;
-  grid-template-columns: 25% 25% 25%;
-  background-color: #de9000;
-  grid-template-areas: "a1 a2 a3" "a5 a6 a7" "a8 a9 a4";
-  justify-items: center;
-  align-items: center;
-  justify-content: space-evenly;
-  align-content: center;
-}
-#grilla #hijo_uno {
-  color: white;
-  text-align: center;
-  background-color: black;
-  grid-area: a1;
-  width: 80%;
-  height: 80%;
-  border: 1px solid black;
-}
-#grilla #hijo_dos {
-  text-align: center;
-  background-color: blueviolet;
-  grid-area: a2;
-  width: 80%;
-  height: 80%;
-  border: 1px solid black;
-}
-#grilla .hijo_tres {
-  text-align: center;
-  background-color: blueviolet;
-  grid-area: a3;
-  width: 80%;
-  height: 80%;
-  border: 1px solid black;
-}
-#grilla .hijo_cuatro {
-  text-align: center;
-  background-color: blueviolet;
-  grid-area: a7;
-  width: 80%;
-  height: 80%;
-  border: 1px solid black;
-}
-#grilla .hijo_cinco {
-  text-align: center;
-  background-color: blueviolet;
-  grid-area: a5;
-  width: 80%;
-  height: 80%;
-  border: 1px solid black;
-}
-#grilla .hijo_seis {
-  text-align: center;
-  background-color: blueviolet;
-  grid-area: a6;
-  width: 80%;
-  height: 80%;
-  border: 1px solid black;
-}
-#grilla img {
-  width: 100%;
-  height: 100%;
-}
+#grilla{
+    display: grid;
+    height: 900px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 25% 25% 25%;
+    background-color: $color_botones;
+    grid-template-areas: 
+    "a1 a2 a3"
+    "a5 a6 a7"
+    "a8 a9 a4";
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
 
+    #hijo_uno{
+        color: white;
+        text-align: center;
+        background-color: black;
+        grid-area: a1;
+        width: 80%;
+        height: 80%;
+        border: 1px solid black;
+    }
+
+    #hijo_dos{
+        text-align: center;
+        background-color: blueviolet;
+        grid-area: a2;
+        width: 80%;
+        height: 80%;
+        border: 1px solid black;
+    }
+
+    .hijo_tres{
+        text-align: center;
+        background-color: blueviolet;
+        grid-area: a3;
+        width: 80%;
+        height: 80%;
+        border: 1px solid black;
+    }
+
+    .hijo_cuatro{
+        text-align: center;
+        background-color: blueviolet;
+        grid-area: a7;
+        width: 80%;
+        height: 80%;
+        border: 1px solid black;
+    }
+
+    .hijo_cinco{
+        text-align: center;
+        background-color: blueviolet;
+        grid-area: a5;
+        width: 80%;
+        height: 80%;
+        border: 1px solid black;
+    }
+
+    .hijo_seis{
+        text-align: center;
+        background-color: blueviolet;
+        grid-area: a6;
+        width: 80%;
+        height: 80%;
+        border: 1px solid black;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+}*/
+@media (min-width: 560px) {
+  #titulo {
+    text-align: center;
+  }
+  #body__cards {
+    display: grid;
+    background: #000;
+    grid-template-columns: repeat(3, 370px);
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+  }
+  #body__cards .card {
+    width: 321px;
+    height: 270px;
+    position: relative;
+    justify-self: center;
+    border: 1px solid rgba(133, 133, 133, 0.3294117647);
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 0.2s ease;
+  }
+  #body__cards .card img {
+    max-height: 100%;
+    min-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    transition: transform 0.2s ease;
+  }
+  #body__cards .card:hover {
+    transform: scale(1.1);
+  }
+}
 .content {
   max-width: 1170px;
   margin-left: auto;
@@ -190,8 +238,11 @@
   justify-content: center;
 }
 .map_responsivo iframe {
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
   align-content: center center;
   justify-content: center;
 }
@@ -210,6 +261,12 @@
   margin-right: 15px;
   font-size: 26px;
   font-family: "Times New Roman", Times, serif;
+}
+#informacion img {
+  border: 1px solid black;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
 }
 
 /*estilos generales*/
@@ -344,13 +401,13 @@ header .logo {
   border-radius: 16px;
 }
 #nuestros-programas .carta:first-child {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/camaro\ imagen\ mediana.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/autos\ consigna.jpg);
 }
 #nuestros-programas .carta:nth-child(2) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/camaro\ imagen\ mediana.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/renta\ de\ autos.jpg);
 }
 #nuestros-programas .carta:nth-child(3) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/camaro\ imagen\ mediana.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/venta\ de\ autofrr.jpg);
 }
 
 /*finaliza seccion de nuestro programas*/
@@ -490,7 +547,7 @@ footer .container {
   /*finaliza progrmas*/
   /*comienza caracteristicas*/
   #caracteristicas {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hablanos.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Classic-Red-Sports\ porsche-Car.jpg);
     background-size: cover;
     background-position: center center;
     height: 459px;
@@ -501,7 +558,7 @@ footer .container {
     justify-content: center;
   }
   ul {
-    margin-left: 100px;
+    margin-left: 27px;
     text-align: center;
     justify-content: center;
     color: white;

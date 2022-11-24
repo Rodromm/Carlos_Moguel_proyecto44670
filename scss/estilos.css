@@ -1,123 +1,27 @@
-/*
-#titulo{
-    width: 100%;
-    background-color: white;
-    text-align: center;
+#titulo {
+  text-align: center;
 }
 
-#grilla{
-    display: grid;
-    height: 900px;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 25% 25% 25%;
-    background-color: $color_botones;
-    grid-template-areas: 
-    "a1 a2 a3"
-    "a5 a6 a7"
-    "a8 a9 a4";
-    justify-items: center;
-    align-items: center;
-    justify-content: space-evenly;
-    align-content: center;
-
-    #hijo_uno{
-        color: white;
-        text-align: center;
-        background-color: black;
-        grid-area: a1;
-        width: 80%;
-        height: 80%;
-        border: 1px solid black;
-    }
-
-    #hijo_dos{
-        text-align: center;
-        background-color: blueviolet;
-        grid-area: a2;
-        width: 80%;
-        height: 80%;
-        border: 1px solid black;
-    }
-
-    .hijo_tres{
-        text-align: center;
-        background-color: blueviolet;
-        grid-area: a3;
-        width: 80%;
-        height: 80%;
-        border: 1px solid black;
-    }
-
-    .hijo_cuatro{
-        text-align: center;
-        background-color: blueviolet;
-        grid-area: a7;
-        width: 80%;
-        height: 80%;
-        border: 1px solid black;
-    }
-
-    .hijo_cinco{
-        text-align: center;
-        background-color: blueviolet;
-        grid-area: a5;
-        width: 80%;
-        height: 80%;
-        border: 1px solid black;
-    }
-
-    .hijo_seis{
-        text-align: center;
-        background-color: blueviolet;
-        grid-area: a6;
-        width: 80%;
-        height: 80%;
-        border: 1px solid black;
-    }
-
-    img{
-        width: 100%;
-        height: 100%;
-    }
-
-
-
-
-}*/
-@media (min-width: 560px) {
-  #titulo {
-    text-align: center;
-  }
-  #body__cards {
-    display: grid;
-    background: #000;
-    grid-template-columns: repeat(3, 370px);
-    justify-content: center;
-    align-items: center;
-    height: 75vh;
-  }
-  #body__cards .card {
-    width: 321px;
-    height: 270px;
-    position: relative;
-    justify-self: center;
-    border: 1px solid rgba(133, 133, 133, 0.3294117647);
-    border-radius: 4px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: border 0.2s ease;
-  }
-  #body__cards .card img {
-    max-height: 100%;
-    min-width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    transition: transform 0.2s ease;
-  }
-  #body__cards .card:hover {
-    transform: scale(1.1);
-  }
+#body__cards {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  padding: 20px;
+  grid-gap: 10px;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
 .content {
   max-width: 1170px;
   margin-left: auto;
@@ -247,28 +151,117 @@
   justify-content: center;
 }
 
-#informacion {
-  display: flex;
-  flex-direction: column;
-}
-#informacion h2 {
+#nosotros__carousel {
+  margin: 0;
+  padding-bottom: 600px;
+  background: #2A2734;
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-#informacion .texto__mision {
-  text-align: justify;
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 26px;
-  font-family: "Times New Roman", Times, serif;
-}
-#informacion img {
-  border: 1px solid black;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 20px;
+  font-family: sans-serif;
+  color: #fefefe;
 }
 
+#container__carousel {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-animation: rotate360 60s infinite forwards linear;
+          animation: rotate360 60s infinite forwards linear;
+}
+
+.image {
+  position: absolute;
+  width: 300px;
+  height: 259px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+@-webkit-keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+.image:nth-child(1) {
+  background-image: url(/nuevo_repo/img/somos\ masterauto.jpg);
+  transform: rotateY(0deg) translateZ(430px);
+}
+
+.image:nth-child(2) {
+  background-image: url(/nuevo_repo/img/autos\ consigna.jpg);
+  transform: rotateY(40deg) translateZ(430px);
+}
+
+.image:nth-child(3) {
+  background-image: url(/nuevo_repo/img/venta\ de\ autofrr.jpg);
+  transform: rotateY(80deg) translateZ(430px);
+}
+
+.image:nth-child(4) {
+  background-image: url(/nuevo_repo/img/hablanos.jpg);
+  transform: rotateY(120deg) translateZ(430px);
+}
+
+.image:nth-child(5) {
+  background-image: url(/nuevo_repo/img/Classic-Red-Sports\ porsche-Car.jpg);
+  transform: rotateY(160deg) translateZ(430px);
+}
+
+.image:nth-child(6) {
+  background-image: url(/nuevo_repo/img/venta1.jpg);
+  transform: rotateY(200deg) translateZ(430px);
+}
+
+.image:nth-child(7) {
+  background-image: url(/nuevo_repo/img/venta3.jpg);
+  transform: rotateY(240deg) translateZ(430px);
+}
+
+.image:nth-child(8) {
+  background-image: url(/nuevo_repo/img/venta6.jpg);
+  transform: rotateY(280deg) translateZ(430px);
+}
+
+.image:nth-child(9) {
+  background-image: url(/nuevo_repo/img/venta4.jpg);
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+@media (max-width: 660px) {
+  #container__carousel {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 300px;
+  }
+}
 /*estilos generales*/
 * {
   box-sizing: border-box;
